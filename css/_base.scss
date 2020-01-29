@@ -1,0 +1,27 @@
+.second-button {
+    a {
+    color: white;
+    font-family: $roboto;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0 20px;
+    }
+
+    height: 48px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: solid 1px #29AEF4;
+    background-color: #29AEF4;
+
+    &:hover {
+    background-color: #54BEF5;
+    border-color: #54BEF5;
+    }
+
+    &:active {
+        background-color: #0298E8;
+        border-color: #0298E8;
+        }
+}

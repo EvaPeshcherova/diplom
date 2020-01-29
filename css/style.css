@@ -1,0 +1,149 @@
+.second-button {
+  height: 48px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: solid 1px #29AEF4;
+  background-color: #29AEF4;
+}
+
+.second-button a {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0 20px;
+}
+
+.second-button:hover {
+  background-color: #54BEF5;
+  border-color: #54BEF5;
+}
+
+.second-button:active {
+  background-color: #0298E8;
+  border-color: #0298E8;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.flex-container, .flex-space-between, .flex-space-between-centered {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-space-between, .flex-space-between-centered {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-space-between-centered {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bg-container-top {
+  width: 100%;
+  position: relative;
+}
+
+.bg-container-top img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  position: absolute;
+  top: -10px;
+}
+
+.navigation-panel {
+  height: 132px;
+  position: relative;
+  z-index: 2;
+}
+
+.navigation-panel .container {
+  height: 100%;
+}
+
+.navigation-panel .container .logo {
+  width: 171px;
+  height: 24px;
+  margin-bottom: 10px;
+}
+
+.navigation-panel .container .nav-link {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  color: #508DB0;
+  text-decoration: none;
+  padding: 0 20px;
+}
+
+.navigation-panel .container .nav-link.active, .navigation-panel .container .nav-link:hover {
+  color: #D2464E;
+}
+
+.navigation-panel .container .enter {
+  padding-right: 28px;
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.tagline {
+  max-width: 1180px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 75px;
+}
+
+.tagline h1 {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 64px;
+  line-height: 72px;
+  margin: 0;
+}
+
+.tagline h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  line-height: 48px;
+  margin-top: 12px;
+  font-weight: 700;
+}
+
+.introduction {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+  line-height: 42px;
+  color: #0E2F4E;
+  font-weight: 500;
+  margin-top: 640px;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
