@@ -12,39 +12,135 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
     <title>Friends Forever</title>
 </head>
 
 <body>
     <div class="bg-container-top">
-        <img src="./images/bg-river.png" alt=""></div>
-    <header class="navigation-panel">
-        <div class="container flex-space-between-centered">
-            <div class="logo"><img src="./images/logo.png" alt="Friends Forever"></div>
-            <nav class="flex-space-between-centered">
+        <header class="navigation-panel">
+            <div class="container flex-space-between-centered">
+                <div class="logo"><img src="./images/logo.png" alt="Friends Forever"></div>
+                <nav class="flex-space-between-centered">
+                    <a href="" class="nav-link active">О сервисе</a>
+                    <a href="" class="nav-link">Люди</a>
+                    <a href="" class="nav-link">Сообщения</a>
+                    <a href="" class="nav-link">Встречи</a>
+                    <a href="" class="nav-link">Профиль</a>
+                </nav>
+                <div class="sign flex-space-between-centered">
+                    <a href="" class="enter">Войти</a>
+                    <div class="second-button flex-space-between-centered"><a href="" class="join">Присоединиться</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="tagline">
+            <h1>Одна встреча может<br>изменить жизнь</h1>
+            <h3>Поиск друзей по всему свету</h3>
+        </div>
+    </div>
+    <div class="flex-space-between-centered introduction">
+        <span>Мы все очень разные, но одинаково хотим,<br>
+            чтоб нас понимали и разделяли наши увлечения.<br>
+            Здесь вы найдете близких по духу людей,<br>
+            с которыми точно не соскучитесь</span>
+    </div>
+    <section class="groups-section">
+        <div class="container">
+            <h2 class="groups-header">С нами более 1000 участников</h2>
+            <div class="cards flex-space-between-centered">
+                <div class="card-item">
+                    <div class="card-title">Футбол</div>
+                    <div class="card-icon-container"></div>
+                    <div class="card-user-avatar"></div>
+                    <div class="card-quantity"></div>
+                </div>
+                <div class="card-item">
+                    <div class="card-title">Вязание</div>
+                    <div class="card-icon-container"></div>
+                    <div class="card-user-avatar"></div>
+                    <div class="card-quantity"></div>
+                </div>
+                <div class="card-item">
+                    <div class="card-title">Танцы</div>
+                    <div class="card-icon-container"></div>
+                    <div class="card-user-avatar"></div>
+                    <div class="card-quantity"></div>
+                </div>
+                <div class="card-item">
+                    <div class="card-title">Живопись</div>
+                    <div class="card-icon-container"></div>
+                    <div class="card-user-avatar"></div>
+                    <div class="card-quantity"></div>
+                </div>
+            </div>
+        </div>
+        <div class="cloud"></div>
+    </section>
+    <section class="dialog flex-space-between">
+        <h2 class="dialog-title">Здесь мы знакомимся</h2>
+        <img src="images/dialog.png" alt="">
+    </section>
+    <section class="meeting">
+        <img src="images/aquabike-river.png" alt="">
+        <h2 class="meeting-title">Встречаемся</h2>
+        <div class="steps container card-icon-container">
+            <div class="steps-card flex-space-between">
+                <div class="step-image circle1"></div>
+                <h3 class="step-title">Создаем встречу</h3>
+                <span class="step-description">Можно легко организовать встечу по интересам для всех или только для
+                    интересных тебе людей</span>
+            </div>
+            <div class="steps-card flex-space-between">
+                <div class="step-image circle2"></div>
+                <h3 class="step-title">Общаемся оффлайн</h3>
+                <span class="step-description">Указывайте время и место встречи, чтоб никто не потерялся и наслаждайтесь
+                    общением</span>
+            </div>
+            <div class="steps-card flex-space-between">
+                <div class="step-image circle3"></div>
+                <h3 class="step-title">Делимся впечатлениями</h3>
+                <span class="step-description">Выкладывайте фото #Friendsforever в Instagram и VK и делитесь яркмим
+                    событиями со всеми</span>
+            </div>
+        </div>
+    </section>
+    <div class="start-button container">
+        <div class="primary-button">
+            <a href="" class="start">начать</a>
+        </div>
+    </div>
+    <div class="choice"></div>
+    <footer>
+        <div class="image-footer"></div>
+        <div class="footer-content container flex-space-between-centered">
+            <span class="site-name">Friends Forever</span>
+            <div class="icon-container flex-container">
+                <a href="" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="" class="social-icon"><i class="fab fa-google-plus-g"></i></a>
+                <a href="" class="social-icon"><i class="fab fa-vimeo-v"></i></a>
+            </div>
+            <div class="nav-footer flex-space-between">
                 <a href="" class="nav-link active">О сервисе</a>
                 <a href="" class="nav-link">Люди</a>
                 <a href="" class="nav-link">Сообщения</a>
                 <a href="" class="nav-link">Встречи</a>
                 <a href="" class="nav-link">Профиль</a>
-            </nav>
-            <div class="sign flex-space-between-centered">
-                <a href="" class="enter">Войти</a>
-                <div class="second-button flex-space-between-centered"><a href="" class="join">Присоединиться</a></div>
             </div>
         </div>
-    </header>
-    <div class="tagline">
-        <h1>Одна встреча может<br>изменить жизнь</h1>
-        <h2>Поиск друзей по всему свету</h2>
-    </div>
-    <div class="container introduction">
-        <span>Мы все очень разные, но одинаково хотим,<br>
-чтоб нас понимали и разделяли наши увлечения.<br>
-Здесь вы найдете близких по духу людей,<br>
-с которыми точно не соскучитесь</span>
-</div>
-<section class="achivement-section"></section>
+    </footer>
 </body>
 
 </html>
