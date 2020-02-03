@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,44 +9,84 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" type="image/x-icon" href="./favicon.ico" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./css/style.css">
     <title>Friends Forever</title>
 </head>
 
 <body>
     <div class="bg-container-top">
-        <header class="navigation-panel">
-            <div class="container flex-space-between-centered">
-                <div class="logo"><img src="./images/logo.png" alt="Friends Forever"></div>
-                <nav class="flex-space-between-centered">
-                    <a href="" class="nav-link active">О сервисе</a>
-                    <a href="" class="nav-link">Люди</a>
-                    <a href="" class="nav-link">Сообщения</a>
-                    <a href="" class="nav-link">Встречи</a>
-                    <a href="" class="nav-link">Профиль</a>
-                </nav>
-                <div class="sign flex-space-between-centered">
-                    <a href="" class="enter">Войти</a>
-                    <div class="second-button flex-space-between-centered"><a href="" class="join">Присоединиться</a>
+        <img class="bg-top" src="./images/bg-river.png" alt="">
+        <div class="bg-foreground">
+            <header class="navigation-panel">
+                <div class="container flex-space-between-centered">
+                    <div class="logo"><img src="./images/logo.png" alt="Friends Forever"></div>
+                    <nav class="flex-space-between-centered">
+                        <a href="" class="nav-link active">О сервисе</a>
+                        <a href="" class="nav-link">Люди</a>
+                        <a href="message.html" class="nav-link">Сообщения</a>
+                        <a href="" class="nav-link">Встречи</a>
+                        <a href="" class="nav-link">Профиль</a>
+                    </nav>
+                    <div class="sign flex-space-between-centered">
+                        <a href="" class="enter">Войти</a>
+                            <button type="button" class="btn btn-primary second-button flex-space-between-centered" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Присоединиться</button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel">Создание аккаунта</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <form>
+                                        <div class="form-group">
+                                          <label for="recipient-name" class="col-form-label">Имя</label>
+                                          <input type="text" class="form-control" id="recipient-name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="recipient-name" class="col-form-label">Телефон</label>
+                                            <input type="text" class="form-control" id="recipient-name">
+                                          </div>
+                                          <div class="form-group">
+                                            <label for="inputPassword4">Пароль</label>
+                                            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                                          </div>
+                                          <div class="form-group">
+                                            <label for="inputPassword4">Пароль повторно</label>
+                                            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                                          </div>
+                                          <div class="form-group">
+                                            <label for="inputState">State</label>
+                                            <select id="inputState" class="form-control">
+                                              <option selected">Откуда Вы о нас узнали?</option>
+                                              <option>От друзей</option>
+                                              <option>Из интернета</option>
+                                            </select>
+                                          </div>
+                                      </form>
+                                    </div>
+                                    <div class="modal-footer flex-space-between-centered">
+                                      <button type="button" class="second-button">Создать аккаунт</button>
+                                      <div class="modal-footer-text"><a href="">У меня уже есть аккаунт</a></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
                     </div>
-                </div>
+            </header>
+            <div class="tagline container">
+                <h1>Одна встреча может<br>изменить жизнь</h1>
+                <h3>Поиск друзей по всему свету</h3>
             </div>
-        </header>
-        <div class="tagline">
-            <h1>Одна встреча может<br>изменить жизнь</h1>
-            <h3>Поиск друзей по всему свету</h3>
         </div>
     </div>
     <div class="flex-space-between-centered introduction">
@@ -62,27 +101,43 @@
             <div class="cards flex-space-between-centered">
                 <div class="card-item">
                     <div class="card-title">Футбол</div>
-                    <div class="card-icon-container"></div>
-                    <div class="card-user-avatar"></div>
-                    <div class="card-quantity"></div>
+                    <div class="card-icon-container football"></div>
+                    <div class="card-user">
+                            <div class="avatar one-avatar"></div>
+                            <div class="avatar two-avatar"></div>
+                            <div class="avatar three-avatar"></div>
+                            <span class="quantity">12 453 чел.</span>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <div class="card-title">Сноуборд</div>
+                    <div class="card-icon-container snowboard"></div>
+                    <div class="card-user">
+                        <div class="avatar one-avatar"></div>
+                        <div class="avatar two-avatar"></div>
+                        <div class="avatar three-avatar"></div>
+                        <span class="quantity">12 453 чел.</span>
+                </div>
                 </div>
                 <div class="card-item">
                     <div class="card-title">Вязание</div>
-                    <div class="card-icon-container"></div>
-                    <div class="card-user-avatar"></div>
-                    <div class="card-quantity"></div>
+                    <div class="card-icon-container knitting"></div>
+                    <div class="card-user">
+                        <div class="avatar one-avatar"></div>
+                        <div class="avatar two-avatar"></div>
+                        <div class="avatar three-avatar"></div>
+                        <span class="quantity">12 453 чел.</span>
+                </div>
                 </div>
                 <div class="card-item">
                     <div class="card-title">Танцы</div>
-                    <div class="card-icon-container"></div>
-                    <div class="card-user-avatar"></div>
-                    <div class="card-quantity"></div>
+                    <div class="card-icon-container dance"></div>
+                    <div class="card-user">
+                        <div class="avatar one-avatar"></div>
+                        <div class="avatar two-avatar"></div>
+                        <div class="avatar three-avatar"></div>
+                        <span class="quantity">12 453 чел.</span>
                 </div>
-                <div class="card-item">
-                    <div class="card-title">Живопись</div>
-                    <div class="card-icon-container"></div>
-                    <div class="card-user-avatar"></div>
-                    <div class="card-quantity"></div>
                 </div>
             </div>
         </div>
@@ -117,13 +172,16 @@
         </div>
     </section>
     <div class="start-button container">
-        <div class="primary-button">
-            <a href="" class="start">начать</a>
+        <div class="primary-button" id="primary">
+            <a class="start" id="toggleLink" href="javascript:void(0);" onclick="viewdiv('mydiv');" data-text-show="В другой раз" data-text-hide="Начать">начать</a>
         </div>
     </div>
-    <div class="choice"></div>
+    <div class="choice" id="mydiv" style="display:none;">
+        <img class="choice-image" src="./images/choice.png" alt="">
+        <h2 class="choice-title">Выбери что нравится</h2>
+        <div class="bottom-button flex-space-between-centered primary-button"><a href="#" class="">Продолжить</a></div>
+    </div>
     <footer>
-        <div class="image-footer"></div>
         <div class="footer-content container flex-space-between-centered">
             <span class="site-name">Friends Forever</span>
             <div class="icon-container flex-container">
@@ -135,12 +193,17 @@
             <div class="nav-footer flex-space-between">
                 <a href="" class="nav-link active">О сервисе</a>
                 <a href="" class="nav-link">Люди</a>
-                <a href="" class="nav-link">Сообщения</a>
+                <a href="message.html" class="nav-link">Сообщения</a>
                 <a href="" class="nav-link">Встречи</a>
                 <a href="" class="nav-link">Профиль</a>
             </div>
         </div>
     </footer>
 </body>
-
+<script>
+  function viewdiv(id) {
+     document.getElementById(id).style.display = "block";
+     document.getElementById('primary').style.display = "none";
+    }
+</script>
 </html>
