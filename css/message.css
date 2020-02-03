@@ -137,9 +137,10 @@ h3 {
 
 .bg-container-top {
   width: 100%;
+  background-color: rebeccapurple;
 }
 
-.bg-container-top .bg-top {
+.bg-container-top .bg-mes {
   width: 100%;
 }
 
@@ -602,22 +603,4 @@ footer .nav-footer .nav-link {
 footer .nav-footer .nav-link.active, footer .nav-footer .nav-link:hover {
   color: #D2464E;
 }
-
-@media screen and (max-device-width: 900px) {
-  .bg-container-top .bg-foreground .tagline {
-    margin: 0 auto;
-    position: relative;
-    margin-top: -5px;
-  }
-  .bg-container-top .bg-foreground .tagline h1 {
-    font-family: "Fira Sans Condensed", sans-serif;
-    font-size: 44px;
-    line-height: 58px;
-    margin: 0;
-  }
-  .bg-container-top .bg-foreground .tagline h3 {
-    font-size: 18px;
-    line-height: 18px;
-  }
-}
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=message.css.map */

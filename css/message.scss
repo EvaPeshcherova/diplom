@@ -5,7 +5,11 @@
 
 .bg-container-top {
     width: 100%;
-    .bg-top{
+   
+    background-color: rebeccapurple;
+
+    .bg-mes{
+        
         width: 100%;
     }
     .bg-foreground { 
@@ -427,30 +431,3 @@ footer {
     }
 }
 
-
-
-
-
-@media screen and (max-device-width: 900px) {
-    .bg-container-top {
-        .bg-foreground {
-            .tagline {
-        margin: 0 auto;
-        position: relative;
-        margin-top: -5px;
-       
-    h1 {
-        font-family: $fira-sans;
-        font-size: 44px;
-        line-height: 58px;
-        margin: 0;
-    }
-    
-    h3 {
-        font-size: 18px;
-        line-height: 18px;
-    }
-    }
-}
-}
-}
